@@ -3,4 +3,13 @@ body {
     margin: 0;  
     overflow: hidden;  
     background-repeat: no-repeat;  
-   }
+    background-size: cover; /* Ensures the background scales to fit the screen */
+    background-position: center; /* Centers the background on all screens */
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Adjusts the background size for smaller screens */
+    }
+}
